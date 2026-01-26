@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pathfinders Club</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+<nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#activities">Activities</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+</nav>
+<header class="header">
+    <h1>Pathfinders Club</h1>
+    <p>Innovate • Create • Inspire</p>
+</header>
+
+<section id="about" class="section">
+    <h2>About the Club</h2>
+    <p>
+        <h4>TechSphere Club is a student-driven community focused on
+        technology, collaboration, and innovation.</h4>
+    </p>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities" class="section light">
+    <h2>Our Activities</h2>
+
+    <div class="cards">
+        <div class="card" onclick="showContent('coding')">💻 Coding Workshops</div>
+        <div class="card" onclick="showContent('projects')">🤝 Team Projects</div>
+        <div class="card" onclick="showContent('talks')">🎤 Tech Talks</div>
+    </div>
+
+    <!-- Hidden Content -->
+    <div id="coding" class="details">
+        <h3>Coding Clubs</h3>
+        <ul>
+            <li>Tech Club</li>
+            <li>Coding Club</li>
+            <li>Web Development Club</li>
+            <li>AI & ML Club</li>
+        </ul>
+    </div>
+
+    <div id="projects" class="details">
+        <h3>Team Projects</h3>
+        <ul>
+            <li>College Website</li>
+            <li>Attendance Management System</li>
+            <li>Online Quiz Platform</li>
+            <li>Student Portal</li>
+        </ul>
+    </div>
+
+    <div id="talks" class="details">
+        <h3>Tech Talks & Events</h3>
+        <ul>
+            <li>Pen to Podium</li>
+            <li>Guest Speaker Sessions</li>
+            <li>Startup Stories</li>
+            <li>Women in Tech</li>
+        </ul>
+    </div>
+</section>
+
+<!-- REGISTRATION FORM -->
+<section id="register" class="section">
+    <h2>Club Registration</h2>
+
+    <form class="form" onsubmit="return showSuccess()">
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Roll Number</label>
+        <input type="text" required>
+
+        <label>Email Address</label>
+        <input type="email" required>
+
+        <label>Department</label>
+        <select required>
+            <option value="">Select</option>
+            <option>CSE</option>
+            <option>CAI</option>
+            <option>CSC</option>
+            <option>CSD</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>IT</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Success Message -->
+    <p id="success" class="success">
+        ✅ Registration Successful! Thank you for Registering in Pathfinders Club.
+    </p>
+</section>
+
+<section id="contact" class="section light">
+    <h2>Contact Us</h2>
+    <p>Email: pathfinders@college.edu</p>
+    <p>Location: College Campus</p>
+</section>
+
+<footer>
+    <p>© 2026 Pathfinders Club | Designed by Muskan</p>
+</footer>
+
+<script src="page.js"></script>
+</body>
+</html>

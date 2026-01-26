@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color: #2b2424;
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    background-color: #5ccaf5;
+    padding: 12px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.section {
+    padding: 50px 30px;
+    text-align: center;
+}
+.light {
+    background-color: #f4f4f4;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.card:hover {
+    background-color: #e8f6f3;
+}
+.details {
+    display: none;
+    margin-top: 30px;
+}
+.details ul {
+    list-style: none;
+    margin-top: 10px;
+}
+.details li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+.form {
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: left;
+}
+.form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+.form input,
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+.form input:focus,
+.form select:focus {
+    border-bottom-color: #1abc9c;
+}
+.form button {
+    margin-top: 25px;
+    padding: 12px;
+    width: 100%;
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.success {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+footer {
+    background-color: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
